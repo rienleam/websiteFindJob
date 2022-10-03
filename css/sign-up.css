@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  background-color: rgb(238, 229, 229);
+}
+
+form {
+  border-radius: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin: auto;
+  background-color: rgb(200, 200, 210);
+  width: 50%;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 7px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.name {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.fisna, .lsna {
+  width: 50%;
+}
+
+button {
+  background-color: orange;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button a {
+  text-decoration: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;
+}
+
+img.avatar {
+  margin-top: 20px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+@media (max-width: 850px) {
+  body {
+    margin-top: 100px;
+  }
+  form {
+    width: 70%;
+  }
+}
+@media (max-width: 450px) {
+  body {
+    margin-top: 40px;
+  }
+  form {
+    width: 85%;
+  }
+  img.avatar {
+    width: 95px;
+  }
+  .name {
+    display: flex;
+    flex-direction: column;
+  }
+  .fisna, .lsna {
+    width: 100%;
+  }
+}/*# sourceMappingURL=sign-up.css.map */

@@ -1,0 +1,133 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: rgb(238, 229, 229);
+}
+@import 'global/navbar';
+
+.province{
+    width: 100%;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../Image/photo_backg.jpg);
+    background-size: cover;
+    h1{
+        font-size: 60px;
+        text-align: center;
+        margin-top: 70px;
+        strong{
+            color: orange
+        }
+    }
+}
+
+@import 'global/search';
+.most{
+    h1{
+        color: rgb(27, 27, 216);
+    }
+}
+.content{
+    width: 100%;
+    display: flex;
+}
+.container1{
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .jobs{
+        width: 85%;
+        display: flex;
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: white;
+        img{
+            width: 100px;
+            border-radius: 10px;
+            border: 1px solid rgb(170, 167, 167);
+        }
+    }
+    .jobs:hover{
+        background-color: rgb(199, 191, 191);
+        h2{
+            color: rgb(27, 27, 216);
+        }
+    }
+    .position{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-left: 30px;
+        h2{
+            margin: 0;
+            color: orange;
+        }
+    }
+}
+.container2, .container3{
+    @extend .container1;
+}
+.see-more{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    button{
+        width: 40%;
+        padding: 15px;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: orange;
+    }
+}
+.see-more button:hover{
+    background-color: rgb(184, 120, 2);
+    color: white
+}
+@import 'global/footer';
+@media (max-width: 850px){
+    .container3{
+        display: none;
+    }
+    .container1, .container2{
+        width: 50%;
+    }
+}
+@media (max-width: 450px){
+    .province{
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        h1{
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+    .container1{
+        width: 100%;
+    }
+    .container2, .container3{
+        display: none;
+    }
+    .position{
+        span{
+            font-size: 13px;
+        }
+    }
+    .see-more button{
+        width: 70%;
+        font-size: 15px;
+    }
+}

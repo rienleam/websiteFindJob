@@ -1,0 +1,126 @@
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    position: fixed;
+    z-index: 1000;
+}
+.nav-left {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+}
+.logo {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+.logo img:nth-child(1){
+    width: 50px;
+    height: 50px;
+}
+.logo img:nth-child(2){
+    width: 200px;
+    height: 50px;
+}
+ul {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        list-style: none;
+        font-weight: bold;
+        font-size: 18px;
+        a {
+            text-decoration: none;
+            padding: 20px 20px 20px 20px;
+        }
+        a:hover {
+            background-color: rgb(22, 22, 202);
+            color: white;
+        }
+    }
+}
+.nav-right {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px;
+    button {
+        padding: 10px 20px 10px 20px;
+        background-color: rgb(252, 164, 2);
+        border: none;
+        border-radius: 5px;
+        font-size: 17px;
+        a{
+            text-decoration: none;
+        }
+    }
+    img{
+        width: 50px;
+    }
+}
+.nav-right button:hover{
+    background-color: rgb(184, 120, 2);
+    color: white;
+}
+.nav-right a:hover{
+    color: white;
+}
+@media (max-width: 850px){
+    .logo {
+        width: 40%;
+        img{
+            padding: 15px;
+        }
+    }
+    ul{
+        width: 60%;
+    }
+    .nav-right{
+        width: 20%;
+    }
+    ul li{
+        font-size: 12px;
+    }
+}
+@media (max-width: 450px){
+    .logo {
+        width: 8%;
+        img:nth-child(2){
+            display: none;
+        }
+    }
+    .nav-left{
+        width: 80%;
+        justify-content: space-between;
+    }
+    .nav-left ul{
+        width: 92%;
+        a{
+            padding: 15px 15px 15px 15px;
+        }
+    }
+    .nav-right{
+        width: 20%;
+        img{
+            display: none;
+        }
+        button{
+            padding: 5px 5px 5px 5px;
+            a{
+                 font-size: 10px;
+            }
+        }
+    }
+    ul li{
+        font-size: 12px;
+    }
+}
