@@ -29,6 +29,7 @@ footer{
 }
 @media (max-width: 450px){
     .follow{
+        display: flex;
         flex-direction: column;
         img{
             width: 16%;
